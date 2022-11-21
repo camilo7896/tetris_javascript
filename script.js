@@ -62,7 +62,7 @@ function playerDrop(){
     player.pos.y++;
     if(collide(arena,player)){
         player.pos.y--;
-        marge(arena, player);
+        merge(arena, player);
         player.pos.y=0;
     }
     dropCounter=0;
