@@ -6,13 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tetris_javascript</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div id="score"></div>
+    <div class="title">
+        <h1>TETRIS</h1>
+    </div>
+    <div class="containerBox">
+        <!-- =============== Header  ================= -->
+        <div class="header">
 
-    <canvas id="tetris" width="240" height="400"></canvas>
-    <script src="script.js"></script>
+            <div class="cont2">
+                <div class="userName" id="username">
+                    <p>USERNAME</p>
+                </div>
+                <div class="level">
+                    <p>LEVEL</p>
+                </div>
+            </div>
+
+            <div class="score">
+                <p>SCORE</p>
+                <div id="score"></div>
+            </div>
+        </div>
+
+        <!-- ==========  Ende Header ============= -->
+        <!-- ==========  canvas ========= -->
+        <div class="container">
+            <canvas id="tetris" width="240" height="400"></canvas>
+            <script src="script.js"></script>
+        </div>
+    </div>
+
+    <div class="cotrl">
+        <ul>
+            <li>Derecha</li>
+            <li>Izquierda</li>
+            <li>Abajo</li>
+            <li>Girar a la Derecha</li>
+            <li>Girar a la Izquierda</li>
+        </ul>
+    </div>
+    <footer>
+        <h2>TETRIS</h2>
+    </footer>
 </body>
 
 </html>
