@@ -134,6 +134,7 @@ function playerDrop() {
         arenaSweep();
         updateScore();
         //player.pos.y = 0;
+        player.pos.y=0;
     }
     dropCounter = 0;
 }
