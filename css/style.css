@@ -15,9 +15,7 @@ body {
 }
 
 .title {
-    width: 100%;
-    height: 150px;
-    margin: 0;
+    margin: 0%;
     padding: 0 0 5rem 0;
     text-align: center;
     font-family: 'fontTetris';
@@ -92,10 +90,24 @@ canvas {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #707070;
-    color: #ffffff;
+    background: #000000;
+    color: #0ec7ff;
     padding: 8px;
     margin: 5px;
+}
+
+.cotrl {
+    color: #ffffff;
+    text-align: center;
+}
+
+.cotrl ul {
+    list-style: none;
+    display: flex;
+}
+
+.cotrl li {
+    padding: 0 10px;
 }
 
 @media only screen and (min-width: 300px) {
@@ -134,8 +146,8 @@ canvas {
         width: 150px;
         font-size: 15px;
     }
-}
-
-.cotrl {
-    color: #ffffff;
+    .cotrl li {
+        padding: 0 10px;
+        font-size: 25px;
+    }
 }
