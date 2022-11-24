@@ -145,6 +145,12 @@ function playerMove(dir) {
         player.pos.x -= dir;
     }
 }
+let sounGameOver = document.getElementById('gameOverSound');
+
+function gameOver() {
+    sounGameOver.innerHTML = '<audio src="./audio/010607643_prev.mp3" autoplay></audio>';
+    alert('Game Over');
+}
 
 function playerReset() {
     const pieces = 'ILJOTSZ';
@@ -154,7 +160,7 @@ function playerReset() {
         (player.matrix[0].length / 2 | 0);
     if (collide(arena, player)) {
         arena.forEach(row => row.fill(0));
-        player.score = 0;
+        gameOver();
         updateScore();
     }
 }
