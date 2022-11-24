@@ -145,14 +145,16 @@ function playerMove(dir) {
         player.pos.x -= dir;
     }
 }
-let sounGameOver = document.getElementById('gameOverSound');
+
 
 function gameOver() {
+    let sounGameOver = document.getElementById('gameOverSound');
     sounGameOver.innerHTML = '<audio src="./audio/010607643_prev.mp3" autoplay></audio>';
-    alert('Game Over');
 }
 
 function playerReset() {
+    // gameOver()
+    // var beep = new Audio('audio/010607643_prev.mp3');
     const pieces = 'ILJOTSZ';
     player.matrix = createPiece(pieces[pieces.length * Math.random() | 0]);
     player.pos.y = 0;
@@ -160,8 +162,11 @@ function playerReset() {
         (player.matrix[0].length / 2 | 0);
     if (collide(arena, player)) {
         arena.forEach(row => row.fill(0));
-        gameOver();
+        // beep.play();
+
+        alert('Game Over');
         updateScore();
+        gameOver();
     }
 }
 
