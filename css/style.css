@@ -110,6 +110,20 @@ canvas {
     padding: 0 10px;
 }
 
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
 @media only screen and (min-width: 300px) {
     .header {
         display: flex;
