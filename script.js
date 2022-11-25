@@ -149,7 +149,7 @@ function playerMove(dir) {
 
 function gameOver() {
     let sounGameOver = document.getElementById('gameOverSound');
-    sounGameOver.innerHTML = '<audio src="./audio/.mp3" autoplay></audio>';
+    sounGameOver.innerHTML = '<audio src="./audio/010607643_prev.mp3" autoplay></audio>';
 }
 
 function playerReset() {
@@ -262,20 +262,22 @@ document.addEventListener("keydown", function(tecla) {
     if (tecla.key == 'h') {
         playerRotate(1);
     }
+
 });
 
-let left = document.getElementById('btnleft').addEventListener("click", function() {
+
+document.getElementById('btnleft').addEventListener("click", function() {
     playerMove(-1);
 });
-let right = document.getElementById('btnleft').addEventListener("click", function() {
+document.getElementById('btnrigth').addEventListener("click", function() {
     playerMove(1);
 });
-let abajo = document.getElementById('btnleft').addEventListener("click", function() {
-    playerMove(-1);
-    console.log('assas')
+document.getElementById('bajar').addEventListener("click", function() {
+    playerDrop();
+
 });
-let rotar = document.getElementById('btnleft').addEventListener("click", function() {
-    playerRotate(-1);
+document.getElementById('rotar').addEventListener("click", function() {
+    playerRotate(1);
 });
 
 
