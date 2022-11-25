@@ -116,12 +116,12 @@ canvas {
 }
 
 .btn {
-    background: black;
+    background: rgb(0, 10, 43);
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .btnsCtrls {
@@ -175,8 +175,10 @@ canvas {
     }
     .btnctrl {
         padding: 15px;
-        background: #000000;
+        background: rgb(0, 10, 43);
         color: #ffffff;
         margin: 10px;
+        border-radius: 15px;
+        font-size: 20px;
     }
 }
