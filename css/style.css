@@ -124,6 +124,10 @@ canvas {
     font-size: 15px;
 }
 
+.btnsCtrls {
+    display: none;
+}
+
 @media only screen and (min-width: 300px) {
     .header {
         display: flex;
@@ -163,5 +167,16 @@ canvas {
     .cotrl li {
         padding: 0 10px;
         font-size: 25px;
+    }
+    .btnsCtrls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btnctrl {
+        padding: 15px;
+        background: #000000;
+        color: #ffffff;
+        margin: 10px;
     }
 }
